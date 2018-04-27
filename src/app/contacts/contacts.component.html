@@ -1,0 +1,30 @@
+<h2>List of Contacts</h2>
+
+<table class="table table-bordered contacts-table">
+  <thead>
+  <td> First name</td>
+  <td> Last name</td>
+  <td> Address</td>
+  <td> City</td>
+  <td> State</td>
+  </thead>
+
+
+  <tr *ngFor="let c of contacts">
+    <td> {{ c.firstname }} </td>
+    <td> {{ c.lastname }} </td>
+    <td> {{ c.address }} </td>
+    <td> {{ c.city }} </td>
+    <td> {{ c.state }} </td>
+  </tr>
+</table>
+
+
+
+<h2>Table of Salutation</h2>
+
+<table class="table table-bordered contacts-table">
+  <tr *ngFor="let s of salutations">
+    <td> {{ s }} </td>
+  </tr>
+</table>
